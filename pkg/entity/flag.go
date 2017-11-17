@@ -19,7 +19,7 @@ type Flag struct {
 	DataRecordsEnabled bool
 
 	// Purely for evaluation
-	FlagEvaluation FlagEvaluation `gorm:"-"`
+	FlagEvaluation FlagEvaluation `gorm:"-" json:"-"`
 }
 
 // FlagEvaluation is a struct that holds the necessary info for evaluation

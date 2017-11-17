@@ -15,7 +15,6 @@ import (
 
 // EvalResult eval result
 // swagger:model evalResult
-
 type EvalResult struct {
 
 	// eval context
@@ -54,22 +53,6 @@ type EvalResult struct {
 	// Min Length: 1
 	VariantKey *string `json:"variantKey"`
 }
-
-/* polymorph evalResult evalContext false */
-
-/* polymorph evalResult evalDebugLog false */
-
-/* polymorph evalResult flagID false */
-
-/* polymorph evalResult segmentID false */
-
-/* polymorph evalResult timestamp false */
-
-/* polymorph evalResult variantAttachment false */
-
-/* polymorph evalResult variantID false */
-
-/* polymorph evalResult variantKey false */
 
 // Validate validates this eval result
 func (m *EvalResult) Validate(formats strfmt.Registry) error {
